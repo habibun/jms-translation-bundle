@@ -6,4 +6,10 @@
     <div class="example-wrapper">
         <a href="{{ path('app_homepage') }}">Homepage</a>
     </div>
+
+    {{ "{0} There is no apples|{1} There is one apple|]1,Inf] There are %count% apples"|transchoice(count) }}
+    <br>
+    {{ "text.apples_remaining"|transchoice(count) }}
+
+
 {% endblock %}
