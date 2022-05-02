@@ -15,6 +15,7 @@ class HomepageController extends AbstractController
     {
         return $this->render('homepage/index.html.twig', [
             'count' => 10,
+            'name' => sprintf('name_%d', rand(1, 10)),
         ]);
     }
 }
